@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Supma</display-name>
+  <description>Supma</description>
+ 
+           <filter>
+            <filter-name>UrlRewriteFilter</filter-name>
+            <filter-class>org.tuckey.web.filters.urlrewrite.UrlRewriteFilter</filter-class>
+        </filter>
+        
+		<filter-mapping>
+		<filter-name>UrlRewriteFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+		</filter-mapping>
+		
+<listener>
+<listener-class> supma.autodo.ContextListener</listener-class>
+</listener>
+
+  <servlet>
+    <servlet-name>InitServlet</servlet-name>
+    <servlet-class>supma.servlets.InitServlet</servlet-class>
+    <init-param>
+      <param-name>configURI</param-name>
+      <param-value>log/online</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  
+   <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>supma.servlets.LoginServlet</servlet-class>
+  </servlet>
+  
+     <servlet>
+    <servlet-name>GoodsInputServlet</servlet-name>
+    <servlet-class>supma.servlets.GoodsInputServlet</servlet-class>
+  </servlet>
+  
+    <servlet>
+    <servlet-name>ImageRandServlet</servlet-name>
+    <servlet-class>supma.servlets.ImageRandServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>RegisterValidateServlet</servlet-name>
+    <servlet-class>supma.servlets.RegisterValidateServlet</servlet-class>
+  </servlet>
+  
+   <servlet>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>supma.servlets.RegisterServlet</servlet-class>
+  </servlet> 
+  
+  <servlet>
+    <servlet-name>UpFileServlet</servlet-name>
+    <servlet-class>com.ideas.servlet.UpFileServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  <servlet-name>login.aspx</servlet-name>
+<jsp-file>/login.jsp</jsp-file>
+</servlet>	
+
+  <servlet>
+  <servlet-name>notlogin.aspx</servlet-name>
+<jsp-file>/no_login.jsp</jsp-file>
+</servlet>	
+
+  <servlet>
+  <servlet-name>error.aspx</servlet-name>
+<jsp-file>/supmaerror.jsp</jsp-file>
+</servlet>	
+
+  <servlet>
+  <servlet-name>regsuccess.aspx</servlet-name>
+<jsp-file>/gister_ok.jsp</jsp-file>
+</servlet>	
+
+  <servlet><servlet-name>index.aspx</servlet-name>
+<jsp-file>/chaoshi_index.jsp</jsp-file>
+</servlet>		
+
+  <servlet><servlet-name>index_pifa.aspx</servlet-name>
+<jsp-file>/pifashang_index.jsp</jsp-file>
+</servlet>		
+
+  <servlet><servlet-name>regist1.aspx</servlet-name>
+<jsp-file>/re1_gister.jsp</jsp-file>
+</servlet>
+
+  <servlet><servlet-name>regist2.aspx</servlet-name>
+<jsp-file>/re2_gister.jsp</jsp-file>
+</servlet>			 
+  
+   <servlet><servlet-name>userarea.aspx</servlet-name>
+<jsp-file>/popup/user_arr.jsp</jsp-file>
+</servlet>
+
+   <servlet><servlet-name>userarea2.aspx</servlet-name>
+<jsp-file>/popup/user2_arr.jsp</jsp-file>
+</servlet>
+
+<servlet><servlet-name>selectgoods.aspx</servlet-name>
+<jsp-file>/popup/selectgoodstype.jsp</jsp-file>
+</servlet>
+ 
+<servlet><servlet-name>popdazeng.aspx</servlet-name>
+<jsp-file>/popup/selectgoods_dazeng.jsp</jsp-file>
+</servlet>
+
+<servlet><servlet-name>cuxiao.aspx</servlet-name>
+<jsp-file>/popup/selectcuxiao.jsp</jsp-file>
+</servlet>
+
+   <servlet><servlet-name>inputgoods.aspx</servlet-name>
+<jsp-file>/goods_input.jsp</jsp-file>
+</servlet>
+
+ <servlet-mapping>
+<servlet-name>login.aspx</servlet-name>
+<url-pattern>/login.aspx</url-pattern>
+</servlet-mapping>
+
+ <servlet-mapping>
+<servlet-name>notlogin.aspx</servlet-name>
+<url-pattern>/notlogin.aspx</url-pattern>
+</servlet-mapping>
+
+ <servlet-mapping>
+<servlet-name>error.aspx</servlet-name>
+<url-pattern>/error.aspx</url-pattern>
+</servlet-mapping>
+
+ <servlet-mapping>
+<servlet-name>regsuccess.aspx</servlet-name>
+<url-pattern>/regsuccess.aspx</url-pattern>
+</servlet-mapping>
+
+ <servlet-mapping>
+<servlet-name>index.aspx</servlet-name>
+<url-pattern>/index.aspx</url-pattern>
+</servlet-mapping>
+
+ <servlet-mapping>
+<servlet-name>index_pifa.aspx</servlet-name>
+<url-pattern>/index_pifa.aspx</url-pattern>
+</servlet-mapping>
+
+ <servlet-mapping>
+<servlet-name>regist1.aspx</servlet-name>
+<url-pattern>/regist1.aspx</url-pattern>
+</servlet-mapping>
+
+ <servlet-mapping>
+<servlet-name>regist2.aspx</servlet-name>
+<url-pattern>/regist2.aspx</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+<servlet-name>userarea.aspx</servlet-name>
+<url-pattern>/userarea.aspx</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+<servlet-name>userarea2.aspx</servlet-name>
+<url-pattern>/userarea2.aspx</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+<servlet-name>selectgoods.aspx</servlet-name>
+<url-pattern>/selectgoods.aspx</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+<servlet-name>popdazeng.aspx</servlet-name>
+<url-pattern>/popdazeng.aspx</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+<servlet-name>cuxiao.aspx</servlet-name>
+<url-pattern>/cuxiao.aspx</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+<servlet-name>inputgoods.aspx</servlet-name>
+<url-pattern>/inputgoods.aspx</url-pattern>
+</servlet-mapping>
+
+ <servlet-mapping>
+ <servlet-name>LoginServlet</servlet-name>
+<url-pattern>/login.goods</url-pattern>
+</servlet-mapping>
+
+ <servlet-mapping>
+ <servlet-name>GoodsInputServlet</servlet-name>
+<url-pattern>/inputgoods.goods</url-pattern>
+</servlet-mapping>
+
+ <servlet-mapping>
+<servlet-name>ImageRandServlet</servlet-name>
+<url-pattern>/validimage.goods</url-pattern>
+</servlet-mapping>
+
+ <servlet-mapping>
+<servlet-name>RegisterValidateServlet</servlet-name>
+<url-pattern>/registervalidate.goods</url-pattern>
+</servlet-mapping>
+
+ <servlet-mapping>
+<servlet-name>RegisterServlet</servlet-name>
+<url-pattern>/register.goods</url-pattern>
+</servlet-mapping>
+
+ <servlet-mapping>
+<servlet-name>UpFileServlet</servlet-name>
+<url-pattern>/upload.goods</url-pattern>
+</servlet-mapping>
+
+  <session-config>
+    <session-timeout>120</session-timeout>
+</session-config>
+
+  <welcome-file-list>
+    <welcome-file>index.aspx</welcome-file>
+  </welcome-file-list>
+  
+<error-page>
+  	<error-code>400</error-code>
+	<location>/error.aspx</location>
+</error-page>
+
+<error-page>
+  	<error-code>404</error-code>
+	<location>/error.aspx</location>
+</error-page>
+  
+  <error-page>
+  	<error-code>500</error-code>
+	<location>/error.aspx</location>
+</error-page>
+
+<resource-ref>
+<res-ref-name>jdbc/mysqlSupmaDataSource</res-ref-name>
+<res-type>javax.sql.DataSource</res-type>
+<res-auth>Container</res-auth>
+</resource-ref>
+
+</web-app>

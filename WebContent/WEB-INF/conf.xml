@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="gb2312"?>
+<configuration>
+	<database>
+		<!--数据库相关配置，logfile为连接池的日志文件	maxconnection为连接池的最大值-->
+		<url>jdbc:mysql://localhost/lunwen</url>
+		<jdbcdriver>org.gjt.mm.mysql.Driver</jdbcdriver>
+		<dbusername>root</dbusername>
+		<dbpassword>123456</dbpassword>
+		<maxconnection>1000</maxconnection>
+		<logfile>D:\\website\mysql\log.txt</logfile>
+	</database>
+
+	<page>
+		<!--每页显示历史纪录的条数-->
+		<number_shown>20</number_shown>
+	</page>
+</configuration>

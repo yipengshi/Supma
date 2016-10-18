@@ -1,0 +1,13 @@
+[2015/12/02 15:25:23][登录用户名:][用户IP:]I:ContextListener|contextInitialized|init成功。定时器1 已启动
+[2015/12/02 15:25:23][登录用户名:][用户IP:]I:ContextListener|contextInitialized|定时器1 已经添加任务调度表
+[2015/12/02 15:25:23][登录用户名:][用户IP:]I:ContextListener|contextInitialized|init成功。定时器2  已启动
+[2015/12/02 15:25:23][登录用户名:][用户IP:]I:ContextListener|contextInitialized|定时器2 已经添加任务调度表
+[2015/12/02 15:25:23][登录用户名:][用户IP:]I:ContextListener|contextInitialized|init成功。定时器3 已启动
+[2015/12/02 15:25:23][登录用户名:][用户IP:]I:ContextListener|contextInitialized|定时器3 已经添加任务调度表
+[2015/12/02 15:25:23][登录用户名:][用户IP:]I:InitServlet|init|init成功。log文件创建
+[2015/12/02 15:25:30][登录用户名:][用户IP:]I:BasicDatabase|executeSql|页面:InitServlet|操作类型:select|select * from errormessage order by error_id 
+[2015/12/02 15:25:30][登录用户名:][用户IP:]I:BasicDatabase|executeSql|页面:GoodsInputServlet|操作类型:select| select  *  from goodsmastertab order by goods_type_level,goods_type_id
+[2015/12/02 15:25:32][登录用户名:][用户IP:]I:InitServlet|init|errorMessage取得成功
+[2015/12/02 15:26:36][登录用户名:][用户IP:]I:ContextListener|contextDestroyed|定时器1 已销毁
+[2015/12/02 15:26:36][登录用户名:][用户IP:]I:ContextListener|contextDestroyed|定时器2 已销毁
+[2015/12/02 15:26:36][登录用户名:][用户IP:]I:ContextListener|contextDestroyed|定时器3 已销毁
